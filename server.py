@@ -55,26 +55,35 @@ def fetch_json(url):
         return None
 
 def update_exchange_rates():
-    """Actualiza tasas de cambio en vivo cada 6 horas."""
+    """Actualiza tasas de cambio en vivo con soporte para proveedores duales."""
     global EXCHANGE_RATES, LAST_UPDATED
-    try:
-        data = fetch_json("https://open.er-api.com/v6/latest/EUR")
-        if data and "rates" in data:
-            rates = data["rates"]
-            for curr in list(EXCHANGE_RATES.keys()):
-                if curr in rates and rates[curr] > 0:
-                    EXCHANGE_RATES[curr] = round(1.0 / rates[curr], 6)
-            LAST_UPDATED = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
-            print(f"[+] Tasas de divisas en vivo actualizadas con éxito ({LAST_UPDATED}).")
-    except Exception as e:
-        print(f"[!] Fallback a tasas base: {e}")
+    providers = [
+        "https://open.er-api.com/v6/latest/EUR",
+        "https://api.exchangerate-api.com/v4/latest/EUR"
+    ]
+    
+    for url in providers:
+        try:
+            data = fetch_json(url)
+            if data and "rates" in data:
+                rates = data["rates"]
+                for curr in list(EXCHANGE_RATES.keys()):
+                    if curr in rates and rates[curr] > 0:
+                        EXCHANGE_RATES[curr] = round(1.0 / rates[curr], 6)
+                LAST_UPDATED = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
+                print(f"[+] Tasas de divisas en vivo actualizadas con éxito desde {url} ({LAST_UPDATED}).")
+                return True
+        except Exception as e:
+            print(f"[!] Error con proveedor {url}: {e}")
+    return False
 
-def background_daily_updater():
+def background_hourly_updater():
+    """Hilo demonio que refresca las tasas automáticamente cada hora."""
     while True:
-        time.sleep(21600)  # Cada 6 horas
+        time.sleep(3600)  # Cada 1 hora
         update_exchange_rates()
 
-updater_thread = threading.Thread(target=background_daily_updater, daemon=True)
+updater_thread = threading.Thread(target=background_hourly_updater, daemon=True)
 updater_thread.start()
 update_exchange_rates()
 

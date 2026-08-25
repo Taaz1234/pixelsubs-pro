@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
   loadSubscriptions();
   updateHeaderBadges();
+
+  // Auto-refresco automático del frontend cada 5 minutos
+  setInterval(() => {
+    loadSubscriptions(false);
+  }, 300000);
 });
 
 function setupEventListeners() {
