@@ -6,17 +6,15 @@
     "icon_type": "svg",
     "icon_id": "gamepass",
     "color": "#107C10",
-    "image": "https://compass-ssl.xbox.com/assets/f0/cd/f0cd237c-3720-4a7b-83c3-d9faecb6cc44.jpg?n=Game-Pass-Ultimate_Sharing-Image_1920x1080.jpg",
-    "spain_price": 19.99,
+    "image": "https://assets.xboxservices.com/assets/f0/69/f0691500-bf65-4f40-a359-0091873fb067.png",
+    "spain_price": 20.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 499, "rate_key": "TRY"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1089, "rate_key": "INR"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 59.99, "rate_key": "BRL"},
-      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 239, "rate_key": "ZAR"},
-      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 19.99, "rate_key": "USD"},
-      {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 19.99, "rate_key": "EUR"}
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 309.00, "rate_key": "TRY"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1089.00, "rate_key": "INR"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 119.99, "rate_key": "BRL"},
+      {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 20.99, "rate_key": "EUR"}
     ],
-    "notes": "Incluye cientos de juegos en PC, Consola, EA Play, multijugador online y juego en la nube (Cloud Gaming)."
+    "notes": "Incluye más de 400 juegos en PC y Consola, EA Play, multijugador online Xbox Live Gold y Cloud Gaming."
   },
   {
     "id": "psplus",
@@ -25,16 +23,15 @@
     "icon_type": "svg",
     "icon_id": "psplus",
     "color": "#003791",
-    "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-tier-badge-deluxe-01-en-24may22?$native$",
-    "spain_price": 16.99,
+    "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-tier-badge-deluxe-01-en-24mar22",
+    "spain_price": 17.99,
     "prices": [
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1109, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 460, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 59.90, "rate_key": "BRL"},
-      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 17.99, "rate_key": "USD"},
-      {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 16.99, "rate_key": "EUR"}
+      {"region": "Turquía (Deluxe)", "flag": "🇹🇷", "currency": "TRY", "amount": 460.00, "rate_key": "TRY"},
+      {"region": "India (Deluxe)", "flag": "🇮🇳", "currency": "INR", "amount": 1109.00, "rate_key": "INR"},
+      {"region": "Brasil (Deluxe)", "flag": "🇧🇷", "currency": "BRL", "amount": 76.90, "rate_key": "BRL"},
+      {"region": "España (Premium)", "flag": "🇪🇸", "currency": "EUR", "amount": 17.99, "rate_key": "EUR"}
     ],
-    "notes": "Catálogo de cientos de juegos PS4/PS5, clásicos de PS1/PS2/PSP, pruebas de juegos y multijugador online."
+    "notes": "Catálogo de cientos de juegos PS4/PS5, clásicos de PS1/PS2/PSP, pruebas de juegos por tiempo limitado y multijugador."
   },
   {
     "id": "nintendo",
@@ -43,16 +40,15 @@
     "icon_type": "svg",
     "icon_id": "nintendo",
     "color": "#E60012",
-    "image": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_500/ncom/en_US/switch/online-service/nintendo-switch-online-logo-icon",
+    "image": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_400/ncom/en_US/switch/online-service/nintendo-switch-online-expansion-pack-badge",
     "spain_price": 5.83,
     "prices": [
-      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 52.50, "rate_key": "ZAR"},
-      {"region": "Japón", "flag": "🇯🇵", "currency": "JPY", "amount": 825, "rate_key": "JPY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 35.10, "rate_key": "BRL"},
-      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 6.66, "rate_key": "USD"},
+      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 49.08, "rate_key": "ZAR"},
+      {"region": "Japón", "flag": "🇯🇵", "currency": "JPY", "amount": 741.00, "rate_key": "JPY"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 35.16, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 5.83, "rate_key": "EUR"}
     ],
-    "notes": "Plan Familiar para hasta 8 cuentas. Juegos de N64, GBA, SEGA, DLC Mario Kart y multijugador online (precio/mes)."
+    "notes": "Plan Familiar para hasta 8 cuentas. Incluye N64, Sega Genesis, Game Boy Advance y DLCs de Mario Kart 8 y Animal Crossing (precio/mes)."
   },
   {
     "id": "geforcenow",
@@ -61,15 +57,14 @@
     "icon_type": "svg",
     "icon_id": "geforcenow",
     "color": "#76B900",
-    "image": "https://images.nvidia.com/geforce-now/logo/gfn-social-share.jpg",
+    "image": "https://images.nvidia.com/geforce-now/gfn-badge-rtx-4080.png",
     "spain_price": 21.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 380, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 79.90, "rate_key": "BRL"},
+      {"region": "Turquía (GAME+)", "flag": "🇹🇷", "currency": "TRY", "amount": 640.00, "rate_key": "TRY"},
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 19.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
-    "notes": "Juego en la nube a 4K 120 FPS / 240 FPS con trazado de rayos completo y servidores RTX 4080."
+    "notes": "Juego en la nube a 4K 120 FPS / 240 FPS con trazado de rayos completo (Ray Tracing) y servidores con gráficas RTX 4080."
   },
   {
     "id": "eaplaypro",
@@ -78,15 +73,14 @@
     "icon_type": "svg",
     "icon_id": "eaplaypro",
     "color": "#FF4747",
-    "image": "https://media.contentapi.ea.com/content/dam/eacom/ea-play/common/ea-play-share-image.jpg",
+    "image": "https://media.contentapi.ea.com/content/dam/eacom/ea-play/common/ea-play-pro-hero-logo.svg",
     "spain_price": 16.99,
     "prices": [
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 999, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 449, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 59.00, "rate_key": "BRL"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 89.00, "rate_key": "BRL"},
+      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 16.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 16.99, "rate_key": "EUR"}
     ],
-    "notes": "Acceso ilimitado a todos los estrenos de EA (EA Sports FC, Battlefield, etc.) en sus ediciones más completas."
+    "notes": "Acceso ilimitado a todos los estrenos de EA Games (EA Sports FC 26, Battlefield, etc.) desde el día 1 en sus mejores ediciones."
   },
   {
     "id": "netflix",
@@ -95,35 +89,34 @@
     "icon_type": "svg",
     "icon_id": "netflix",
     "color": "#E50914",
-    "image": "https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/711a76a8-7f91-455b-9d41-477cfb8813a4/ES-es-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg",
+    "image": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
     "spain_price": 21.99,
     "prices": [
-      {"region": "Pakistán", "flag": "🇵🇰", "currency": "PKR", "amount": 1100, "rate_key": "PKR"},
-      {"region": "Egipto", "flag": "🇪🇬", "currency": "EGP", "amount": 270, "rate_key": "EGP"},
-      {"region": "Nigeria", "flag": "🇳🇬", "currency": "NGN", "amount": 8500, "rate_key": "NGN"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 649, "rate_key": "INR"},
+      {"region": "Pakistán", "flag": "🇵🇰", "currency": "PKR", "amount": 1100.00, "rate_key": "PKR"},
+      {"region": "Egipto", "flag": "🇪🇬", "currency": "EGP", "amount": 270.00, "rate_key": "EGP"},
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 379.99, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 59.90, "rate_key": "BRL"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 649.00, "rate_key": "INR"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
-    "notes": "Plan 4K Ultra HD sin anuncios con audio espacial Dolby Atmos y descargas en 6 dispositivos."
+    "notes": "Plan 4K Ultra HD sin anuncios con audio espacial y soporte para 4 pantallas simultáneas."
   },
   {
     "id": "disney",
-    "name": "Disney+ Premium (4K UHD)",
+    "name": "Disney+ Premium (4K UHD + 4 Pantallas)",
     "category": "Cine & Series",
     "icon_type": "svg",
     "icon_id": "disney",
     "color": "#113CCF",
-    "image": "https://static-assets.bamgrid.com/product/disneyplus/images/share-default.14fadd993578b3f1718d16bf63763ff8.png",
+    "image": "https://static-assets.bamgrid.com/product/disneyplus/images/disney-plus-logo.svg",
     "spain_price": 13.99,
     "prices": [
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 299, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 199.99, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 43.90, "rate_key": "BRL"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 164.99, "rate_key": "TRY"},
+      {"region": "India (JioHotstar)", "flag": "🇮🇳", "currency": "INR", "amount": 299.00, "rate_key": "INR"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 62.90, "rate_key": "BRL"},
+      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 15.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 13.99, "rate_key": "EUR"}
     ],
-    "notes": "Catálogo completo de Disney, Pixar, Marvel, Star Wars, National Geographic y Star en calidad 4K UHD."
+    "notes": "Todo el contenido de Disney, Pixar, Marvel, Star Wars, National Geographic y Star (Hulu) en 4K Dolby Atmos."
   },
   {
     "id": "max",
@@ -132,33 +125,33 @@
     "icon_type": "svg",
     "icon_id": "max",
     "color": "#002BE7",
-    "image": "https://images.ctfassets.net/y2ske730sjqp/1a9mZ4L7i9gW5zK7Q2jL1y/8e547285c5dfdf2cf0f959fa238cfc84/Max_Header.jpg",
+    "image": "https://art-gallery-latam.api.hbo.com/images/max-logo.png",
     "spain_price": 13.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 149.99, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 39.90, "rate_key": "BRL"},
-      {"region": "Argentina", "flag": "🇦🇷", "currency": "ARS", "amount": 4999, "rate_key": "ARS"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 159.90, "rate_key": "TRY"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 55.90, "rate_key": "BRL"},
+      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 20.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 13.99, "rate_key": "EUR"}
     ],
-    "notes": "Series legendarias de HBO, estrenos de Warner Bros y transmisión de deportes en vivo en 4K UHD."
+    "notes": "Series de HBO (The Last of Us, House of the Dragon), películas de Warner Bros, DC Universe y Eurosport en 4K UHD."
   },
   {
     "id": "prime",
-    "name": "Amazon Prime (Vídeo + Envíos)",
+    "name": "Amazon Prime Vídeo",
     "category": "Cine & Series",
     "icon_type": "svg",
     "icon_id": "prime",
     "color": "#00A8E1",
-    "image": "https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png",
+    "image": "https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remake.png",
     "spain_price": 4.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 39.00, "rate_key": "TRY"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 299, "rate_key": "INR"},
       {"region": "Egipto", "flag": "🇪🇬", "currency": "EGP", "amount": 29.00, "rate_key": "EGP"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 39.00, "rate_key": "TRY"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 299.00, "rate_key": "INR"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 19.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 4.99, "rate_key": "EUR"}
     ],
-    "notes": "Incluye Prime Video sin anuncios, envíos rápidos gratuitos en Amazon y juegos gratis en Prime Gaming."
+    "notes": "Películas, series originales de Amazon MGM (The Boys, Fallout, El Señor de los Anillos) y envíos gratuitos en Prime."
   },
   {
     "id": "appletv",
@@ -166,17 +159,17 @@
     "category": "Cine & Series",
     "icon_type": "svg",
     "icon_id": "appletv",
-    "color": "#222222",
-    "image": "https://www.apple.com/v/apple-tv-plus/ah/images/meta/apple-tv__e7ec5fn28fcm_og.png",
+    "color": "#000000",
+    "image": "https://www.apple.com/v/apple-tv-plus/ah/images/meta/apple-tv__e7a63m8l5p2u_og.png",
     "spain_price": 9.99,
     "prices": [
       {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 99.00, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 119.99, "rate_key": "TRY"},
-      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 89.00, "rate_key": "ZAR"},
+      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 129.00, "rate_key": "ZAR"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 149.99, "rate_key": "TRY"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 9.99, "rate_key": "EUR"}
     ],
-    "notes": "Producciones galardonadas de Apple Originals en 4K HDR con Dolby Vision y Dolby Atmos."
+    "notes": "Producciones galardonadas de Apple Originals (Severance, Ted Lasso, Fundación, Silo) en 4K Dolby Vision."
   },
   {
     "id": "crunchyroll",
@@ -185,15 +178,16 @@
     "icon_type": "svg",
     "icon_id": "crunchyroll",
     "color": "#F47521",
-    "image": "https://images.ctfassets.net/4cd45et68cgf/7xG4sZq347mZ7mN5YyW7fH/cf26802e071c778fa81e626e84db81d6/crunchyroll-brand-banner.jpg",
+    "image": "https://www.crunchyroll.com/build/assets/img/favicons/favicon-v2-196x196.png",
     "spain_price": 6.49,
     "prices": [
-      {"region": "Argentina", "flag": "🇦🇷", "currency": "ARS", "amount": 1499, "rate_key": "ARS"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 99.00, "rate_key": "INR"},
+      {"region": "Argentina", "flag": "🇦🇷", "currency": "ARS", "amount": 1499.00, "rate_key": "ARS"},
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 49.99, "rate_key": "TRY"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 19.99, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 6.49, "rate_key": "EUR"}
     ],
-    "notes": "El mayor catálogo de anime en simulcast con Japón, sin anuncios, descargas y 4 dispositivos simultáneos."
+    "notes": "Anime ilimitado sin anuncios, simulcasts estrenados 1 hora después de Japón y visionado sin conexión en 4 dispositivos."
   },
   {
     "id": "youtube",
@@ -202,17 +196,17 @@
     "icon_type": "svg",
     "icon_id": "youtube",
     "color": "#FF0000",
-    "image": "https://www.gstatic.com/youtube/img/promos/growth/ytp_full_social_banner_1920x1080.png",
+    "image": "https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144.png",
     "spain_price": 15.99,
     "prices": [
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 149, "rate_key": "INR"},
-      {"region": "Ucrania", "flag": "🇺🇦", "currency": "UAH", "amount": 99, "rate_key": "UAH"},
+      {"region": "Nigeria", "flag": "🇳🇬", "currency": "NGN", "amount": 1700.00, "rate_key": "NGN"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 149.00, "rate_key": "INR"},
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 79.99, "rate_key": "TRY"},
-      {"region": "Filipinas", "flag": "🇵🇭", "currency": "PHP", "amount": 159, "rate_key": "PHP"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 24.90, "rate_key": "BRL"},
+      {"region": "Filipinas", "flag": "🇵🇭", "currency": "PHP", "amount": 189.00, "rate_key": "PHP"},
+      {"region": "Ucrania", "flag": "🇺🇦", "currency": "UAH", "amount": 179.00, "rate_key": "UAH"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 15.99, "rate_key": "EUR"}
     ],
-    "notes": "Cero anuncios en todos los vídeos de YouTube, reproducción en segundo plano y YouTube Music Premium."
+    "notes": "Vídeos sin anuncios, reproducción en segundo plano, descargas offline y YouTube Music Premium incluido."
   },
   {
     "id": "spotify",
@@ -221,47 +215,47 @@
     "icon_type": "svg",
     "icon_id": "spotify",
     "color": "#1DB954",
-    "image": "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png",
+    "image": "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
     "spain_price": 11.99,
     "prices": [
-      {"region": "Pakistán", "flag": "🇵🇰", "currency": "PKR", "amount": 349, "rate_key": "PKR"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 119, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 69.99, "rate_key": "TRY"},
-      {"region": "Filipinas", "flag": "🇵🇭", "currency": "PHP", "amount": 149, "rate_key": "PHP"},
+      {"region": "Pakistán", "flag": "🇵🇰", "currency": "PKR", "amount": 379.00, "rate_key": "PKR"},
+      {"region": "Egipto", "flag": "🇪🇬", "currency": "EGP", "amount": 79.00, "rate_key": "EGP"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 139.00, "rate_key": "INR"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 99.00, "rate_key": "TRY"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 11.99, "rate_key": "EUR"}
     ],
-    "notes": "Música sin anuncios a máxima calidad de audio (320 kbps) y descargas offline ilimitadas."
+    "notes": "Música sin anuncios, calidad de audio máxima, saltos ilimitados y modo offline en más de 100 millones de canciones."
   },
   {
     "id": "applemusic",
-    "name": "Apple Music Individual",
+    "name": "Apple Music (Lossless & Spatial)",
     "category": "Música & Audio",
     "icon_type": "svg",
     "icon_id": "applemusic",
-    "color": "#FA2D48",
-    "image": "https://www.apple.com/v/apple-music/t/images/meta/apple-music__b4p56b063i6q_og.png",
+    "color": "#FA243C",
+    "image": "https://music.apple.com/assets/favicon/favicon-180.png",
     "spain_price": 10.99,
     "prices": [
       {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 99.00, "rate_key": "INR"},
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 49.99, "rate_key": "TRY"},
-      {"region": "Sudáfrica", "flag": "🇿🇦", "currency": "ZAR", "amount": 69.00, "rate_key": "ZAR"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 39.99, "rate_key": "TRY"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
+      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 10.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 10.99, "rate_key": "EUR"}
     ],
-    "notes": "Más de 100 millones de canciones en calidad Lossless (sin pérdida) y Audio Espacial con Dolby Atmos."
+    "notes": "Audio espacial con Dolby Atmos, catálogo completo en Lossless / Hi-Res Lossless sin coste añadido y letras sincronizadas."
   },
   {
     "id": "tidal",
-    "name": "TIDAL HiFi Plus (Master FLAC)",
+    "name": "TIDAL HiFi Plus (FLAC Master Audio)",
     "category": "Música & Audio",
     "icon_type": "svg",
     "icon_id": "tidal",
     "color": "#000000",
-    "image": "https://tidal.com/resources/images/sharing/og-image.jpg",
+    "image": "https://tidal.com/favicon.ico",
     "spain_price": 10.99,
     "prices": [
-      {"region": "Argentina", "flag": "🇦🇷", "currency": "ARS", "amount": 1899, "rate_key": "ARS"},
+      {"region": "Argentina", "flag": "🇦🇷", "currency": "ARS", "amount": 1250.00, "rate_key": "ARS"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 10.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 10.99, "rate_key": "EUR"}
@@ -312,7 +306,7 @@
     "spain_price": 21.99,
     "prices": [
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 289.99, "rate_key": "TRY"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1950, "rate_key": "INR"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1950.00, "rate_key": "INR"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 96.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
@@ -329,7 +323,7 @@
     "spain_price": 11.99,
     "prices": [
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 99.99, "rate_key": "TRY"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 499, "rate_key": "INR"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 499.00, "rate_key": "INR"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 34.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 11.99, "rate_key": "EUR"}
     ],
@@ -346,7 +340,7 @@
     "spain_price": 8.25,
     "prices": [
       {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 149.99, "rate_key": "TRY"},
-      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 619, "rate_key": "INR"},
+      {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 619.00, "rate_key": "INR"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 45.00, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 8.25, "rate_key": "EUR"}
     ],
