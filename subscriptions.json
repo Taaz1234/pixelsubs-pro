@@ -278,12 +278,12 @@
     "image": "https://images.openai.com/blob/8b965f32-6a75-4302-b2d9-1c9f8095b341/chatgpt-share-og.png",
     "spain_price": 22.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 499.99, "rate_key": "TRY"},
+      {"region": "Turquía (TRY)", "flag": "🇹🇷", "currency": "TRY", "amount": 999.00, "rate_key": "TRY"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 99.90, "rate_key": "BRL"},
-      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 20.00, "rate_key": "USD"},
+      {"region": "Global (USD)", "flag": "🌐", "currency": "USD", "amount": 20.00, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 22.99, "rate_key": "EUR"}
     ],
-    "notes": "Acceso ilimitado a GPT-4o, generación de imágenes con DALL-E 3, modo de voz avanzado y Canvas."
+    "notes": "Acceso ilimitado a GPT-4o, GPT-4o Canvas, modelos de razonamiento o1, generación de imágenes DALL-E 3 y modo de voz avanzado (Turquía: 999 TRY Plus / 250 TRY Go)."
   },
   {
     "id": "claudepro",
