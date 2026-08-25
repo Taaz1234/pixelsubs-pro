@@ -9,7 +9,7 @@
     "image": "https://assets.xboxservices.com/assets/f0/69/f0691500-bf65-4f40-a359-0091873fb067.png",
     "spain_price": 20.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 309.00, "rate_key": "TRY"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 520.00, "rate_key": "TRY"},
       {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1089.00, "rate_key": "INR"},
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 119.99, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 20.99, "rate_key": "EUR"}
