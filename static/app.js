@@ -93,6 +93,35 @@ function updateHeaderBadges() {
   calcSelectedCountSpan.textContent = state.calcSelected.length;
 }
 
+// Trigger Auto Sync de Precios en Vivo
+async function triggerAutoSync() {
+  const syncBtn = document.getElementById('syncBtn');
+  if (syncBtn) {
+    syncBtn.classList.add('spinning');
+    syncBtn.innerHTML = '<i class="fa-solid fa-arrows-rotate fa-spin text-emerald"></i> <span>Verificando...</span>';
+  }
+  showToast('🔄 Verificando precios de tiendas oficiales...', 'info');
+
+  try {
+    const res = await fetch('/api/subscriptions/auto-sync');
+    if (!res.ok) throw new Error('Error en el servidor');
+    const data = await res.json();
+    state.subscriptions = data.subscriptions || [];
+    state.lastUpdated = data.last_updated;
+    lastUpdateSpan.textContent = state.lastUpdated;
+    renderGrid();
+    renderCategories();
+    showToast('✅ ¡Precios de tiendas oficiales verificados en tiempo real!', 'success');
+  } catch (err) {
+    showToast('⚠️ No se pudo completar el auto-sync: ' + err.message, 'error');
+  } finally {
+    if (syncBtn) {
+      syncBtn.classList.remove('spinning');
+      syncBtn.innerHTML = '<i class="fa-solid fa-arrows-rotate text-emerald"></i> <span>Auto-Sync</span>';
+    }
+  }
+}
+
 // Carga de Suscripciones
 async function loadSubscriptions(forceRefresh = false) {
   showLoader(true);

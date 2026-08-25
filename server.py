@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-PixelSubs Pro Server v2.0.0
+PixelSubs Pro Server v2.5.0
 Plataforma Integral de Comparativa de Precios Regionales de Suscripciones Digitales y Calculadora de Ahorro.
-Alojado en Google Pixel 6a Microserver.
+Con motor de verificación automática de APIs y tiendas oficiales (scraper.py).
 """
 
 import http.server
@@ -28,14 +28,14 @@ EXCHANGE_RATES = {
     "USD": 0.92,
     "UAH": 0.022,    # Ucrania
     "KZT": 0.00185,  # Kazajistán
-    "TRY": 0.027,    # Turquía
+    "TRY": 0.0178,   # Turquía (1 EUR ≈ 56.18 TRY)
     "ARS": 0.00092,  # Argentina
     "CNY": 0.127,    # China
     "BRL": 0.165,    # Brasil
     "INR": 0.00895,  # India (1 EUR ≈ 111.7 INR)
     "GBP": 1.17,     # Reino Unido
     "PKR": 0.0033,   # Pakistán
-    "NGN": 0.00061,  # Nigeria
+    "NGN": 0.00060,  # Nigeria
     "EGP": 0.019,    # Egipto
     "PHP": 0.016,    # Filipinas
     "ZAR": 0.051,    # Sudáfrica (Rand)
@@ -44,7 +44,7 @@ EXCHANGE_RATES = {
 
 def fetch_json(url):
     headers = {
-        "User-Agent": "PixelSubsPro/2.0 (https://github.com/Taaz1234/pixel6a-microserver)",
+        "User-Agent": "PixelSubsPro/2.5 (https://github.com/Taaz1234/pixelsubs-pro)",
         "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"
     }
     req = urllib.request.Request(url, headers=headers)
@@ -77,15 +77,25 @@ def update_exchange_rates():
             print(f"[!] Error con proveedor {url}: {e}")
     return False
 
+import scraper
+
 def background_hourly_updater():
-    """Hilo demonio que refresca las tasas automáticamente cada hora."""
+    """Hilo demonio que refresca las tasas y verifica precios oficiales automáticamente."""
     while True:
         time.sleep(3600)  # Cada 1 hora
         update_exchange_rates()
+        try:
+            scraper.run_price_verification_and_sync()
+        except Exception as e:
+            print(f"[!] Error en auto-verificación background: {e}")
 
 updater_thread = threading.Thread(target=background_hourly_updater, daemon=True)
 updater_thread.start()
 update_exchange_rates()
+try:
+    scraper.run_price_verification_and_sync()
+except Exception as e:
+    print(f"[!] Error inicial de scraper: {e}")
 
 def load_subscriptions_data():
     if os.path.exists(SUBS_FILE):
@@ -132,6 +142,7 @@ def get_processed_subscriptions():
             "name": sub.get("name"),
             "category": sub.get("category"),
             "icon": sub.get("icon"),
+            "icon_id": sub.get("icon_id", sub.get("id")),
             "color": sub.get("color"),
             "image": sub.get("image"),
             "spain_price": spain_price,
@@ -164,18 +175,22 @@ class MainRequestHandler(http.server.SimpleHTTPRequestHandler):
         if path == "/api/subscriptions":
             subs_data = get_processed_subscriptions()
             self.send_json(subs_data)
-
+        elif path == "/api/subscriptions/auto-sync":
+            update_exchange_rates()
+            sync_res = scraper.run_price_verification_and_sync()
+            subs_data = get_processed_subscriptions()
+            subs_data["sync_result"] = sync_res
+            self.send_json(subs_data)
         elif path == "/api/subscriptions/refresh":
             update_exchange_rates()
             subs_data = get_processed_subscriptions()
             self.send_json(subs_data)
-
         elif path == "/api/rates":
             self.send_json({
                 "last_updated": LAST_UPDATED,
+                "base": "EUR",
                 "rates": EXCHANGE_RATES
             })
-
         else:
             super().do_GET()
 
@@ -185,18 +200,27 @@ class MainRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
         self.end_headers()
         self.wfile.write(body)
 
+    def log_message(self, format, *args):
+        pass
+
+class ThreadingHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
+    daemon_threads = True
+    allow_reuse_address = True
+
 if __name__ == "__main__":
-    os.makedirs(STATIC_DIR, exist_ok=True)
-    print(f"==================================================")
-    print(f"💎 PixelSubs Pro v2.0 - Microserver Pixel 6a")
-    print(f"📡 Escuchando en: http://0.0.0.0:{PORT}")
-    print(f"💳 Comparador de Suscripciones & Calculadora de Ahorro")
-    print(f"🔄 Auto-Actualizador Diario Activo ({LAST_UPDATED})")
-    print(f"==================================================")
-    
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.ThreadingTCPServer(("0.0.0.0", PORT), MainRequestHandler) as httpd:
+    print(f"=== PIXELSUBS PRO v2.5 ===")
+    print(f"Servidor HTTP corriendo en http://0.0.0.0:{PORT}")
+    print(f"Directorio Estático: {STATIC_DIR}")
+    print(f"Base de Datos: {SUBS_FILE}")
+    print(f"Verificador Automático de Tiendas Oficiales: ACTIVO")
+
+    httpd = ThreadingHTTPServer(("0.0.0.0", PORT), MainRequestHandler)
+    try:
         httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\nDeteniendo servidor...")
+        httpd.server_close()
