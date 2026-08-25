@@ -362,9 +362,9 @@
     "image": "https://s1.nordcdn.com/nordvpn/media/1.2223.0/images/global/social-preview/nordvpn.jpg",
     "spain_price": 4.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 49.00, "rate_key": "TRY"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 14.90, "rate_key": "BRL"},
-      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 3.99, "rate_key": "USD"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 489.00, "rate_key": "TRY"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 34.90, "rate_key": "BRL"},
+      {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 4.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 4.99, "rate_key": "EUR"}
     ],
     "notes": "Navegación cifrada de alta velocidad en más de 111 países, protección contra malware y bloqueador de rastreadores."
