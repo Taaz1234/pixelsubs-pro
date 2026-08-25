@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelSubs Pro - Comparador Global de Suscripciones & Ahorro Digital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <div class="banner-content">
+      <span><i class="fa-solid fa-bolt text-gold"></i> Precios Oficiales Actualizados 2026</span>
+      <span class="banner-sep">&bull;</span>
+      <span id="bannerUpdated"><i class="fa-solid fa-arrows-rotate"></i> Actualizado en vivo</span>
+      <span class="banner-sep">&bull;</span>
+      <span><i class="fa-solid fa-shield-halved text-green"></i> Google Pixel 6a Microserver</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area" onclick="filterCategory('all')">
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="logo-text">
+          <div class="logo-title">PixelSubs <span class="badge-pro">PRO</span></div>
+          <div class="logo-sub">Comparador Global de Suscripciones</div>
+        </div>
+      </div>
+
+      <!-- Buscador Principal -->
+      <div class="search-wrapper">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Buscar suscripción (Netflix, Game Pass, Spotify, ChatGPT, Google One...)" autocomplete="off">
+          <button id="clearSearchBtn" class="clear-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="header-actions">
+        <button class="action-btn-pill calc-toggle-btn" onclick="openCalculatorModal()">
+          <i class="fa-solid fa-calculator text-cyan"></i>
+          <span>Calculadora</span>
+          <span class="badge-count" id="calcSelectedCount">0</span>
+        </button>
+
+        <button class="action-btn-pill fav-toggle-btn" onclick="filterCategory('favorites')">
+          <i class="fa-solid fa-star text-gold"></i>
+          <span>Favoritos</span>
+          <span class="badge-count" id="favCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Metrics Banner -->
+  <div class="hero-stats-bar">
+    <div class="hero-stats-container">
+      <div class="stat-box">
+        <div class="stat-num" id="totalSubsCount">21</div>
+        <div class="stat-lbl">Plataformas Analizadas</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num text-green">Hasta -92%</div>
+        <div class="stat-lbl">Ahorro Máximo</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num text-gold" id="maxYearlySaving">~200€ / año</div>
+        <div class="stat-lbl">Ahorro Máximo por Servicio</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num text-cyan" id="liveCurrenciesCount">16 Divisas</div>
+        <div class="stat-lbl">Auto-Actualizadas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs / Categories -->
+  <nav class="categories-nav">
+    <div class="categories-container">
+      <button class="cat-pill active" data-cat="all" onclick="filterCategory('all')">
+        <i class="fa-solid fa-border-all"></i> Todas
+      </button>
+      <button class="cat-pill" data-cat="Videojuegos" onclick="filterCategory('Videojuegos')">
+        <i class="fa-solid fa-gamepad"></i> Videojuegos
+      </button>
+      <button class="cat-pill" data-cat="Cine & Series" onclick="filterCategory('Cine & Series')">
+        <i class="fa-solid fa-film"></i> Cine & Series
+      </button>
+      <button class="cat-pill" data-cat="Música & Audio" onclick="filterCategory('Música & Audio')">
+        <i class="fa-solid fa-music"></i> Música & Audio
+      </button>
+      <button class="cat-pill" data-cat="Inteligencia Artificial" onclick="filterCategory('Inteligencia Artificial')">
+        <i class="fa-solid fa-robot"></i> Inteligencia Artificial
+      </button>
+      <button class="cat-pill" data-cat="Productividad & VPN" onclick="filterCategory('Productividad & VPN')">
+        <i class="fa-solid fa-shield-halved"></i> Productividad & VPN
+      </button>
+    </div>
+  </nav>
+
+  <!-- Controls Bar (Sorting & Quick Filter) -->
+  <div class="controls-bar">
+    <div class="controls-container">
+      <div class="section-title-box">
+        <h2 id="currentCategoryTitle"><i class="fa-solid fa-list-check"></i> Todas las Suscripciones</h2>
+        <span class="count-pill" id="resultsCount">21 servicios</span>
+      </div>
+
+      <div class="sort-controls">
+        <span class="sort-lbl"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordenar por:</span>
+        <select id="sortSelect" onchange="handleSortChange()">
+          <option value="saving_eur">Mayor Ahorro Anual (€)</option>
+          <option value="saving_pct">Mayor Porcentaje (%)</option>
+          <option value="cheapest_price">Precio Más Barato (€)</option>
+          <option value="spain_price">Precio España (€)</option>
+          <option value="name">Nombre (A-Z)</option>
+        </select>
+        <button class="refresh-rates-btn" onclick="forceRefreshRates()" title="Forzar actualización de tasas de cambio en vivo">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Grid -->
+  <main class="main-content">
+    <div id="loader" class="loader-container" style="display: none;">
+      <div class="spinner"></div>
+      <p>Calculando tasas y ahorros en vivo...</p>
+    </div>
+
+    <div class="subs-grid" id="subsGrid">
+      <!-- Inyectado dinámicamente con JS -->
+    </div>
+  </main>
+
+  <!-- Modal Comparativo de Países -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeDetailModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="detailModalContent">
+        <!-- Inyectado dinámicamente -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal / Drawer Calculadora de Cesta de Ahorro -->
+  <div class="modal-overlay" id="calcModal">
+    <div class="modal-card calc-modal-card">
+      <button class="modal-close" id="closeCalcModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="calc-modal-header">
+        <div class="calc-header-title">
+          <i class="fa-solid fa-calculator text-cyan"></i>
+          <h3>Calculadora de Cesta de Ahorro</h3>
+        </div>
+        <p class="calc-header-desc">Selecciona las suscripciones que utilizas para calcular tu ahorro total al año:</p>
+      </div>
+
+      <div class="calc-modal-body">
+        <div class="calc-items-list" id="calcItemsList">
+          <!-- Inyectado dinámicamente -->
+        </div>
+
+        <div class="calc-summary-panel">
+          <div class="calc-summary-row">
+            <span>Coste Total en España 🇪🇸:</span>
+            <span class="calc-price-spain" id="calcTotalSpain">0.00€ / año</span>
+          </div>
+          <div class="calc-summary-row">
+            <span>Coste Óptimo Global 🌍:</span>
+            <span class="calc-price-opt" id="calcTotalOpt">0.00€ / año</span>
+          </div>
+          <div class="calc-savings-banner">
+            <div class="calc-savings-title"><i class="fa-solid fa-piggy-bank"></i> AHORRO TOTAL NETO:</div>
+            <div class="calc-savings-amount" id="calcTotalSaving">0.00€ / año</div>
+            <div class="calc-savings-pct" id="calcTotalSavingPct">¡Ahorras un 0%!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-brand"><i class="fa-solid fa-globe text-cyan"></i> PixelSubs Pro</div>
+        <div class="footer-desc">Microservidor auto-alojado en Google Pixel 6a &bull; Tasas de divisas en tiempo real vía Open Exchange Rates</div>
+      </div>
+      <div class="footer-right">
+        <a href="http://192.168.1.135:8080" target="_blank" class="footer-link"><i class="fa-solid fa-gauge"></i> PixelPulse</a>
+        <a href="https://github.com/Taaz1234/pixel6a-microserver" target="_blank" class="footer-link"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
