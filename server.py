@@ -148,6 +148,7 @@ def get_processed_subscriptions():
             "spain_price": spain_price,
             "spain_yearly": spain_yearly,
             "notes": sub.get("notes"),
+            "tutorial": sub.get("tutorial"),
             "cheapest_region": cheapest,
             "cheapest_yearly": cheapest_yearly,
             "yearly_saving": yearly_saving,

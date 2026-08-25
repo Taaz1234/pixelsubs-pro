@@ -9,12 +9,27 @@
     "image": "https://assets.xboxservices.com/assets/f0/69/f0691500-bf65-4f40-a359-0091873fb067.png",
     "spain_price": 20.99,
     "prices": [
-      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 520.00, "rate_key": "TRY"},
+      {"region": "Turquía", "flag": "🇹🇷", "currency": "TRY", "amount": 529.00, "rate_key": "TRY"},
       {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 1089.00, "rate_key": "INR"},
-      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 119.99, "rate_key": "BRL"},
+      {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 76.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 20.99, "rate_key": "EUR"}
     ],
-    "notes": "Incluye más de 400 juegos en PC y Consola, EA Play, multijugador online Xbox Live Gold y Cloud Gaming."
+    "notes": "Incluye más de 400 juegos en PC y Consola, EA Play, multijugador online Xbox Live Gold y Cloud Gaming.",
+    "tutorial": {
+      "method": "Tarjetas de Regalo Xbox TRY / BRL o Canje Directo con VPN",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN con servidor en Turquía o Brasil (UrbanVPN, Windscribe, NordVPN)", "Cuenta Microsoft (puedes usar tu cuenta principal)", "Saldo en Gift Card de la región (Eneba / Turgame / Gamivo)"],
+      "steps": [
+        "Adquiere una tarjeta de regalo Xbox en Liras Turcas (TRY) o Reales Brasileños (BRL) en tiendas como Eneba o Turgame.",
+        "Abre una ventana en modo incógnito en tu navegador y activa la VPN conectada a Turquía o Brasil.",
+        "Inicia sesión con tu cuenta Microsoft y entra en https://redeem.microsoft.com.",
+        "Introduce el código de la tarjeta de regalo para añadir los fondos directamente al monedero de tu cuenta.",
+        "Ve a la tienda de Xbox (xbox.com/tr-tr/games/store/xbox-game-pass-ultimate) y suscríbete seleccionando el saldo de tu monedero Microsoft como método de pago.",
+        "¡Listo! Desconecta la VPN. Tu suscripción Ultimate funcionará en tu PC, consola Xbox y Xbox Cloud Gaming desde cualquier parte del mundo."
+      ],
+      "tips": "No es necesario mantener la VPN encendida para jugar o descargar juegos tras la activación."
+    }
   },
   {
     "id": "psplus",
@@ -31,7 +46,22 @@
       {"region": "Brasil (Deluxe)", "flag": "🇧🇷", "currency": "BRL", "amount": 76.90, "rate_key": "BRL"},
       {"region": "España (Premium)", "flag": "🇪🇸", "currency": "EUR", "amount": 17.99, "rate_key": "EUR"}
     ],
-    "notes": "Catálogo de cientos de juegos PS4/PS5, clásicos de PS1/PS2/PSP, pruebas de juegos por tiempo limitado y multijugador."
+    "notes": "Catálogo de cientos de juegos PS4/PS5, clásicos de PS1/PS2/PSP, pruebas de juegos por tiempo limitado y multijugador.",
+    "tutorial": {
+      "method": "Cuenta PSN Secundaria Regional + Compartir en Consola Principal",
+      "difficulty": "Media",
+      "success_rate": "100%",
+      "requirements": ["Cuenta de correo nueva", "VPN en Turquía o Brasil", "Tarjeta prepago PSN Wallet o tarjeta virtual regional"],
+      "steps": [
+        "Crea una nueva cuenta de PlayStation Network seleccionando Turquía o Brasil como país de residencia (Código postal Estambul: 34000).",
+        "Compra un código de saldo para monedero PSN de Turquía o Brasil en Turgame, MTTC o SEAGM.",
+        "Canjea el código en la PlayStation Store turca/brasileña desde la consola o la web.",
+        "Contrata el plan PS Plus Deluxe utilizando el saldo acumulado en tu monedero.",
+        "En tu consola PS4 o PS5, inicia sesión con esta cuenta y activa la opción 'Compartir consola y juego offline' (Consola Principal).",
+        "¡Hecho! Ahora puedes volver a tu cuenta española habitual y disfrutar de todos los juegos descargados y del juego online multijugador."
+      ],
+      "tips": "Los trofeos y partidas guardadas se sincronizan normalmente en tu usuario español principal."
+    }
   },
   {
     "id": "nintendo",
@@ -48,7 +78,22 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 35.16, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 5.83, "rate_key": "EUR"}
     ],
-    "notes": "Plan Familiar para hasta 8 cuentas. Incluye N64, Sega Genesis, Game Boy Advance y DLCs de Mario Kart 8 y Animal Crossing (precio/mes)."
+    "notes": "Plan Familiar para hasta 8 cuentas. Incluye N64, Sega Genesis, Game Boy Advance y DLCs de Mario Kart 8 y Animal Crossing (precio/mes).",
+    "tutorial": {
+      "method": "Cambio Oficial Directo de Región en Nintendo Account",
+      "difficulty": "Muy Fácil",
+      "success_rate": "100%",
+      "requirements": ["Tu cuenta Nintendo habitual", "Tarjeta bancaria estándar (Revolut, N26, Visa o Mastercard española)", "Sin saldo restante en monedero eShop europeo"],
+      "steps": [
+        "Inicia sesión en https://accounts.nintendo.com desde tu ordenador o móvil.",
+        "Entra en 'Perfil' > 'Información de usuario' > 'Editar' y cambia el 'País o región' a 'Sudáfrica' o 'Japón'. Guarda los cambios.",
+        "Entra en la Nintendo eShop desde tu Switch o a través de la web oficial de Nintendo.",
+        "Compra la suscripción Nintendo Switch Online + Pase de Expansión (Familiar) pagando directamente con tu tarjeta Revolut o bancaria habitual.",
+        "Una vez completada la compra, puedes invitar a hasta 7 amigos o familiares a tu grupo familiar.",
+        "Si lo deseas, puedes volver a cambiar tu región a España en accounts.nintendo.com; la suscripción seguirá activa durante los 12 meses."
+      ],
+      "tips": "Nintendo no bloquea tarjetas españolas en la eShop de Sudáfrica. Es el método más sencillo y seguro del mercado."
+    }
   },
   {
     "id": "geforcenow",
@@ -64,7 +109,21 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 19.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
-    "notes": "Juego en la nube a 4K 120 FPS / 240 FPS con trazado de rayos completo (Ray Tracing) y servidores con gráficas RTX 4080."
+    "notes": "Juego en la nube a 4K 120 FPS / 240 FPS con trazado de rayos completo (Ray Tracing) y servidores con gráficas RTX 4080.",
+    "tutorial": {
+      "method": "Registro en Partner Oficial Nvidia GAME+ con VPN",
+      "difficulty": "Media",
+      "success_rate": "95%",
+      "requirements": ["VPN con servidor en Turquía", "Tarjeta virtual Revolut / N26 con opción de pago internacional activada"],
+      "steps": [
+        "Conéctate con tu VPN a Turquía y accede a la plataforma oficial de Nvidia en Turquía: https://gameplus.com.tr.",
+        "Crea una cuenta en GeForce NOW GAME+ y selecciona el plan Ultimate RTX 4080.",
+        "Introduce tu tarjeta Revolut en el formulario de pago seguro.",
+        "Descarga e instala la aplicación GeForce NOW en tu ordenador, Smart TV o móvil.",
+        "Inicia sesión seleccionando el servidor GAME+ y vincula tus bibliotecas de Steam, Epic Games o Xbox Game Pass."
+      ],
+      "tips": "Comprueba tu latencia (ping) hacia los servidores de Europa Oriental para una experiencia de juego óptima."
+    }
   },
   {
     "id": "eaplaypro",
@@ -80,7 +139,21 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 16.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 16.99, "rate_key": "EUR"}
     ],
-    "notes": "Acceso ilimitado a todos los estrenos de EA Games (EA Sports FC 26, Battlefield, etc.) desde el día 1 en sus mejores ediciones."
+    "notes": "Acceso ilimitado a todos los estrenos de EA Games (EA Sports FC 26, Battlefield, etc.) desde el día 1 en sus mejores ediciones.",
+    "tutorial": {
+      "method": "Tienda EA Regional con VPN y Monedero EA / Tarjeta",
+      "difficulty": "Media",
+      "success_rate": "95%",
+      "requirements": ["VPN en Brasil", "Cuenta de EA (Electronic Arts)", "Tarjeta multidivisa o tarjeta de saldo EA BRL"],
+      "steps": [
+        "Abre el navegador en modo incógnito y conecta la VPN a Brasil.",
+        "Entra en https://ea.com/ea-play y accede con tu cuenta EA.",
+        "Selecciona el plan EA Play Pro en Reales Brasileños (R$).",
+        "Completa el pago con tarjeta Revolut/Wise o mediante tarjetas de regalo de EA en BRL.",
+        "Abre la EA App en tu PC sin VPN y descarga cualquier juego de lanzamiento sin coste adicional."
+      ],
+      "tips": "Los juegos de EA Play Pro incluyen todas las ediciones Deluxe/Ultimate y pases de temporada."
+    }
   },
   {
     "id": "netflix",
@@ -98,7 +171,22 @@
       {"region": "India", "flag": "🇮🇳", "currency": "INR", "amount": 649.00, "rate_key": "INR"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
-    "notes": "Plan 4K Ultra HD sin anuncios con audio espacial y soporte para 4 pantallas simultáneas."
+    "notes": "Plan 4K Ultra HD sin anuncios con audio espacial y soporte para 4 pantallas simultáneas.",
+    "tutorial": {
+      "method": "Tarjeta de Regalo Netflix Turquía/Egipto (Método 100% Garantizado)",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN en Turquía o Egipto (UrbanVPN o Windscribe)", "Tarjeta de regalo Netflix TRY o EGP (Eneba / G2A / Gamivo)", "Correo electrónico"],
+      "steps": [
+        "Compra un código de tarjeta regalo de Netflix en Liras Turcas (TRY) o Libras Egipcias (EGP) en Eneba o G2A.",
+        "Conéctate con tu VPN al país de la tarjeta comprada y abre una pestaña de incógnito en https://netflix.com.",
+        "Inicia el registro con tu correo y selecciona el plan Premium 4K.",
+        "En la pantalla de pago, escoge 'Código de regalo' e introduce el código que compraste.",
+        "El saldo se cargará en tu cuenta cubriendo varios meses de suscripción por adelantado.",
+        "⚠️ IMPORTANTE (Regla de los 28 días): Durante los primeros 28 días, es posible que requieras conectar la VPN para reproducir contenido en España. Tras el día 28, el bloqueo geográfico de Netflix expira automáticamente y funciona directamente en cualquier Smart TV o móvil sin VPN."
+      ],
+      "tips": "Puedes acumular varios códigos de regalo para tener 1 o 2 años de Netflix pagados de golpe."
+    }
   },
   {
     "id": "disney",
@@ -116,7 +204,22 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 15.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 13.99, "rate_key": "EUR"}
     ],
-    "notes": "Todo el contenido de Disney, Pixar, Marvel, Star Wars, National Geographic y Star (Hulu) en 4K Dolby Atmos."
+    "notes": "Todo el contenido de Disney, Pixar, Marvel, Star Wars, National Geographic y Star (Hulu) en 4K Dolby Atmos.",
+    "tutorial": {
+      "method": "Suscripción In-App vía Google Play Store o Apple ID de Turquía",
+      "difficulty": "Media",
+      "success_rate": "100%",
+      "requirements": ["Apple ID o cuenta de Google configurada en Turquía", "Tarjeta regalo de iTunes o Google Play en TRY", "Dispositivo móvil (iPhone, iPad o Android)"],
+      "steps": [
+        "Crea un Apple ID o cuenta de Google Play secundaria con país 'Turquía' (sin añadir tarjeta bancaria).",
+        "Compra una tarjeta de regalo de Apple iTunes o Google Play de Turquía en Eneba o Turgame y canjéala en tu cuenta móvil.",
+        "Descarga la aplicación oficial de Disney+ desde la tienda de aplicaciones turca.",
+        "Abre la app de Disney+, inicia sesión o regístrate y elige la suscripción Premium.",
+        "Confirma el pago mediante la compra integrada de Google Play o Apple con el saldo en liras turcas.",
+        "¡Listo! Ahora puedes iniciar sesión con tu cuenta de Disney+ en tu televisor, consola o navegador sin usar VPN."
+      ],
+      "tips": "El catálogo de películas y series se adapta automáticamente al idioma y país donde te encuentres."
+    }
   },
   {
     "id": "max",
@@ -133,7 +236,21 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 20.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 13.99, "rate_key": "EUR"}
     ],
-    "notes": "Series de HBO (The Last of Us, House of the Dragon), películas de Warner Bros, DC Universe y Eurosport en 4K UHD."
+    "notes": "Series de HBO (The Last of Us, House of the Dragon), películas de Warner Bros, DC Universe y Eurosport en 4K UHD.",
+    "tutorial": {
+      "method": "Suscripción Móvil IAP (Apple Store / Google Play) o BluTV Turquía",
+      "difficulty": "Media",
+      "success_rate": "95%",
+      "requirements": ["Apple ID / Google Play turco con saldo prepago", "App Max instalada"],
+      "steps": [
+        "Configura una cuenta de App Store o Play Store turca con tarjeta de regalo de saldo TRY.",
+        "Descarga la app de Max desde esa tienda.",
+        "Inicia sesión con tu cuenta y pulsa en 'Suscribirse'.",
+        "Elige el plan Anual o Mensual 4K y aprueba el cobro con el saldo en liras.",
+        "Disfruta de todo el catálogo de HBO Max en tus Smart TVs sin necesidad de VPN."
+      ],
+      "tips": "El plan anual incluye un descuento adicional del 16% sobre el precio mensual."
+    }
   },
   {
     "id": "prime",
@@ -151,7 +268,22 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 19.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 4.99, "rate_key": "EUR"}
     ],
-    "notes": "Películas, series originales de Amazon MGM (The Boys, Fallout, El Señor de los Anillos) y envíos gratuitos en Prime."
+    "notes": "Películas, series originales de Amazon MGM (The Boys, Fallout, El Señor de los Anillos) y envíos gratuitos en Prime.",
+    "tutorial": {
+      "method": "Alta Directa en Amazon Turquía o Egipto con Tarjeta Revolut",
+      "difficulty": "Muy Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN conectada a Turquía o Egipto", "Cuenta de Amazon", "Tarjeta bancaria internacional (Revolut, N26, Wise o Visa)"],
+      "steps": [
+        "Activa la VPN en Turquía (amazon.com.tr) o Egipto (amazon.eg).",
+        "Inicia sesión con tu cuenta de Amazon existente o crea una nueva.",
+        "Ve a la sección Prime Video y haz clic en 'Comenzar prueba gratis' o 'Suscribirse a Prime'.",
+        "Introduce los datos de tu tarjeta Revolut/N26 e introduce una dirección local de Turquía o Egipto (generador de direcciones online).",
+        "Confirma la suscripción. Amazon te cobrará tan solo 39 TRY (~0.70€) o 29 EGP (~0.55€) al mes.",
+        "Apaga la VPN y abre primevideo.com o la app en tu Smart TV para ver todo el catálogo con doblaje y subtítulos en español."
+      ],
+      "tips": "Amazon cobra mes a mes de forma automática sin cancelaciones."
+    }
   },
   {
     "id": "appletv",
@@ -169,7 +301,21 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 9.99, "rate_key": "EUR"}
     ],
-    "notes": "Producciones galardonadas de Apple Originals (Severance, Ted Lasso, Fundación, Silo) en 4K Dolby Vision."
+    "notes": "Producciones galardonadas de Apple Originals (Severance, Ted Lasso, Fundación, Silo) en 4K Dolby Vision.",
+    "tutorial": {
+      "method": "Apple ID de India o Turquía con Tarjetas iTunes",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["Nuevo Apple ID creado con región India o Turquía", "Tarjeta regalo de iTunes de esa región (Eneba / Amazon IN / Turgame)"],
+      "steps": [
+        "Crea un Apple ID gratuito en https://appleid.apple.com seleccionando país 'India' o 'Turquía'.",
+        "En tu iPhone, iPad o PC (iTunes), inicia sesión con esta nueva cuenta.",
+        "Canjea una tarjeta regalo de Apple de la moneda correspondiente.",
+        "Abre la app de Apple TV y suscríbete al servicio mensual.",
+        "Puedes invitar a tu cuenta española mediante 'En Familia' para compartir la suscripción con hasta 6 personas de tu hogar."
+      ],
+      "tips": "Apple TV+ en India cuesta menos de 1 euro al mes (₹99 INR)."
+    }
   },
   {
     "id": "crunchyroll",
@@ -187,7 +333,21 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 19.99, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 6.49, "rate_key": "EUR"}
     ],
-    "notes": "Anime ilimitado sin anuncios, simulcasts estrenados 1 hora después de Japón y visionado sin conexión en 4 dispositivos."
+    "notes": "Anime ilimitado sin anuncios, simulcasts estrenados 1 hora después de Japón y visionado sin conexión en 4 dispositivos.",
+    "tutorial": {
+      "method": "Registro Web con VPN en India o Argentina con Tarjeta Revolut",
+      "difficulty": "Muy Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN con servidor en India, Argentina o Turquía", "Cuenta Crunchyroll sin suscripción activa", "Tarjeta bancaria (Revolut o N26)"],
+      "steps": [
+        "Abre el navegador en modo incógnito y enciende la VPN en India o Argentina.",
+        "Entra en https://crunchyroll.com y crea o inicia sesión en tu cuenta.",
+        "Selecciona el plan 'Mega Fan' (el precio se mostrará como ₹99 INR o $1.499 ARS).",
+        "Paga con tu tarjeta Revolut o N26.",
+        "Desconecta la VPN. Podrás ver todos los animes simulcast en castellano y japonés subtitulado desde cualquier dispositivo sin VPN."
+      ],
+      "tips": "El plan Mega Fan permite 4 pantallas simultáneas y descargas para ver sin conexión."
+    }
   },
   {
     "id": "youtube",
@@ -206,7 +366,21 @@
       {"region": "Ucrania", "flag": "🇺🇦", "currency": "UAH", "amount": 179.00, "rate_key": "UAH"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 15.99, "rate_key": "EUR"}
     ],
-    "notes": "Vídeos sin anuncios, reproducción en segundo plano, descargas offline y YouTube Music Premium incluido."
+    "notes": "Vídeos sin anuncios, reproducción en segundo plano, descargas offline y YouTube Music Premium incluido.",
+    "tutorial": {
+      "method": "Perfil de Facturación Regional en Google Pay + VPN Nigeria / Ucrania",
+      "difficulty": "Media",
+      "success_rate": "95%",
+      "requirements": ["VPN con servidor en Nigeria, Ucrania o Turquía", "Tarjeta virtual Revolut o Mastercard prepago", "Cuenta de Google"],
+      "steps": [
+        "Entra en https://pay.google.com > 'Configuración' y crea un nuevo perfil de pagos con país Nigeria, Ucrania o Turquía y una dirección de esa región.",
+        "Conéctate con tu VPN al país elegido y abre una ventana de incógnito en https://youtube.com/premium.",
+        "Haz clic en 'Obtener YouTube Premium' (individual o familiar).",
+        "Selecciona tu tarjeta Revolut asociada al perfil de facturación y autoriza el pago en moneda local.",
+        "¡Listo! Desconecta la VPN. Tendrás YouTube y YouTube Music sin anuncios en todos tus dispositivos y Smart TVs para siempre."
+      ],
+      "tips": "El plan familiar permite invitar a hasta 5 miembros de tu casa por una fracción mínima adicional."
+    }
   },
   {
     "id": "spotify",
@@ -225,7 +399,22 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 21.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 11.99, "rate_key": "EUR"}
     ],
-    "notes": "Música sin anuncios, calidad de audio máxima, saltos ilimitados y modo offline en más de 100 millones de canciones."
+    "notes": "Música sin anuncios, calidad de audio máxima, saltos ilimitados y modo offline en más de 100 millones de canciones.",
+    "tutorial": {
+      "method": "Tarjeta de Regalo Spotify Prepago del País (SEAGM / Eneba)",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN en Pakistán, Egipto o Turquía", "Tarjeta regalo de Spotify de esa región comprada en SEAGM, Eneba o G2A"],
+      "steps": [
+        "Compra un código de tarjeta prepago de Spotify (3, 6 o 12 meses) de Pakistán, Egipto o Turquía en SEAGM o Eneba.",
+        "Conéctate con tu VPN al país de la tarjeta.",
+        "Inicia sesión en https://spotify.com/account > 'Editar perfil' y cambia el 'País o región' al país de tu VPN.",
+        "Ve a https://spotify.com/redeem e introduce el código de la tarjeta de regalo.",
+        "Tu cuenta se actualizará a Premium inmediatamente por los meses adquiridos.",
+        "Desconecta la VPN y disfruta de tu música y playlists habituales sin anuncios."
+      ],
+      "tips": "Al usar tarjetas de regalo no hay riesgo de rechazo bancario de tarjetas extranjeras."
+    }
   },
   {
     "id": "applemusic",
@@ -243,7 +432,20 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 10.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 10.99, "rate_key": "EUR"}
     ],
-    "notes": "Audio espacial con Dolby Atmos, catálogo completo en Lossless / Hi-Res Lossless sin coste añadido y letras sincronizadas."
+    "notes": "Audio espacial con Dolby Atmos, catálogo completo en Lossless / Hi-Res Lossless sin coste añadido y letras sincronizadas.",
+    "tutorial": {
+      "method": "Apple ID de Turquía o India con Saldo iTunes",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["Apple ID creado con región Turquía/India", "Tarjeta de saldo iTunes en TRY / INR"],
+      "steps": [
+        "Crea un Apple ID en appleid.apple.com con país Turquía o India.",
+        "Recarga saldo canjeando una tarjeta iTunes de esa divisa.",
+        "Abre la app Música en tu iPhone o Mac y contrata la suscripción por 39.99 TRY (~0.71€) o ₹99 INR (~0.89€).",
+        "Disfruta de sonido Lossless Hi-Res en cualquier dispositivo."
+      ],
+      "tips": "Puedes compartir el plan Familiar con hasta 6 personas de tu hogar."
+    }
   },
   {
     "id": "tidal",
@@ -260,7 +462,20 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 10.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 10.99, "rate_key": "EUR"}
     ],
-    "notes": "Audio de alta fidelidad sin comprimir (hasta 24 bits / 192 kHz) en formato FLAC Master y Sony 360 Reality."
+    "notes": "Audio de alta fidelidad sin comprimir (hasta 24 bits / 192 kHz) en formato FLAC Master y Sony 360 Reality.",
+    "tutorial": {
+      "method": "Registro Web con VPN en Argentina o Brasil con Tarjeta Revolut",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN en Argentina o Brasil", "Tarjeta Revolut / N26"],
+      "steps": [
+        "Conéctate con tu VPN a Argentina o Brasil y entra en https://tidal.com.",
+        "Crea tu cuenta y selecciona la calidad HiFi Plus FLAC Master.",
+        "Paga con tarjeta Revolut en pesos argentinos o reales brasileños.",
+        "Desconecta la VPN. Toda tu música sonará en máxima fidelidad sin restricciones."
+      ],
+      "tips": "Compatible con equipos de alta fidelidad, Wiim, Bluesound y streaming Bit-Perfect."
+    }
   },
   {
     "id": "chatgpt",
@@ -277,7 +492,22 @@
       {"region": "Global (USD)", "flag": "🌐", "currency": "USD", "amount": 20.00, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 22.99, "rate_key": "EUR"}
     ],
-    "notes": "Acceso ilimitado a GPT-4o, GPT-4o Canvas, modelos de razonamiento o1, generación de imágenes DALL-E 3 y modo de voz avanzado (Turquía: 999 TRY Plus / 250 TRY Go)."
+    "notes": "Acceso ilimitado a GPT-4o, GPT-4o Canvas, modelos de razonamiento o1, generación de imágenes DALL-E 3 y modo de voz avanzado (Turquía: 999 TRY Plus / 250 TRY Go).",
+    "tutorial": {
+      "method": "Suscripción In-App desde App Store o Google Play Store de Turquía",
+      "difficulty": "Media",
+      "success_rate": "100%",
+      "requirements": ["Dispositivo iOS o Android con cuenta secundaria en Turquía", "Saldo en Gift Card de iTunes o Google Play en TRY", "Cuenta de OpenAI / ChatGPT"],
+      "steps": [
+        "Inicia sesión en la App Store o Google Play con tu cuenta secundaria de Turquía.",
+        "Canjea una tarjeta de regalo en liras turcas para tener al menos 999 TRY (Plus) o 250 TRY (Go) en el saldo de tu tienda.",
+        "Descarga y abre la aplicación oficial de ChatGPT en tu teléfono.",
+        "Inicia sesión con tu cuenta habitual de OpenAI/ChatGPT.",
+        "Entra en Ajustes > 'Upgrade to ChatGPT Plus' y suscríbete confirmando el pago con el saldo de la tienda móvil.",
+        "¡Listo! Tu cuenta tendrá acceso a GPT-4o, razonamiento o1, voz avanzada y Canvas tanto en el móvil como en la web oficial (chatgpt.com) desde tu ordenador sin VPN."
+      ],
+      "tips": "Evitas el pago del 21% de IVA europeo que se cobra en la web."
+    }
   },
   {
     "id": "claudepro",
@@ -293,7 +523,20 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 20.00, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 22.99, "rate_key": "EUR"}
     ],
-    "notes": "Acceso prioritario a Claude 3.5 Sonnet y Opus con una ventana de contexto masiva de 200K tokens y Projects."
+    "notes": "Acceso prioritario a Claude 3.5 Sonnet y Opus con una ventana de contexto masiva de 200K tokens y Projects.",
+    "tutorial": {
+      "method": "Facturación Internacional en USD o vía App Store",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["Tarjeta Revolut / Wise en divisa USD", "Cuenta en Claude.ai"],
+      "steps": [
+        "Entra en https://claude.ai y regístrate con tu correo.",
+        "Haz clic en 'Upgrade to Claude Pro'.",
+        "Introduce una tarjeta Revolut o Wise en divisa USD.",
+        "Acceso instantáneo a Claude 3.5 Sonnet con ventana de 200.000 tokens y función Projects."
+      ],
+      "tips": "El pago en USD ahorra el recargo de IVA europeo del 21%."
+    }
   },
   {
     "id": "googleone",
@@ -310,7 +553,21 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 96.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 21.99, "rate_key": "EUR"}
     ],
-    "notes": "2 TB de almacenamiento en Google Drive, Gmail y Fotos, junto con Gemini 1.5 Pro integrado en Docs y Gmail."
+    "notes": "2 TB de almacenamiento en Google Drive, Gmail y Fotos, junto con Gemini 1.5 Pro integrado en Docs y Gmail.",
+    "tutorial": {
+      "method": "Perfil de Pagos de Google Pay en Turquía + Grupo Familiar",
+      "difficulty": "Media",
+      "success_rate": "95%",
+      "requirements": ["Cuenta de Google", "VPN en Turquía", "Tarjeta bancaria internacional (Revolut / N26)"],
+      "steps": [
+        "Entra en https://pay.google.com > 'Configuración' y crea un perfil de pagos con país Turquía (dirección de hotel en Estambul).",
+        "Conéctate con tu VPN en Turquía y entra en https://one.google.com.",
+        "Selecciona el plan AI Premium 2TB con Gemini Advanced por 289.99 TRY (~5.17€/mes).",
+        "Paga con tu tarjeta Revolut.",
+        "Crea un grupo familiar de Google y añade a hasta 5 cuentas de tus familiares para compartir los 2 TB de almacenamiento."
+      ],
+      "tips": "Ahorras más de 200€ al año y obtienes Gemini 1.5 Pro con 1 millón de tokens de contexto."
+    }
   },
   {
     "id": "canvapro",
@@ -327,7 +584,20 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 34.90, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 11.99, "rate_key": "EUR"}
     ],
-    "notes": "Herramientas de diseño impulsadas por IA, eliminación mágica de fondos y más de 100 millones de plantillas."
+    "notes": "Herramientas de diseño impulsadas por IA, eliminación mágica de fondos y más de 100 millones de plantillas.",
+    "tutorial": {
+      "method": "Compra Web con VPN en Turquía o India con Tarjeta Revolut",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN en Turquía o India", "Tarjeta Revolut", "Cuenta Canva"],
+      "steps": [
+        "Conéctate con la VPN en Turquía o India y abre https://canva.com en modo incógnito.",
+        "Inicia sesión y selecciona 'Pasar a Canva Pro' mensual o anual.",
+        "Paga con tu tarjeta Revolut en liras o rupias.",
+        "Apaga la VPN. Puedes usar Canva Pro en web, app de escritorio y móvil con todos los recursos premium desbloqueados."
+      ],
+      "tips": "El plan anual en Turquía sale por menos de 18€ al año completo."
+    }
   },
   {
     "id": "office365",
@@ -344,7 +614,20 @@
       {"region": "Brasil", "flag": "🇧🇷", "currency": "BRL", "amount": 45.00, "rate_key": "BRL"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 8.25, "rate_key": "EUR"}
     ],
-    "notes": "Hasta 6 personas con 1 TB de OneDrive cada una (6 TB en total) y Word, Excel, PowerPoint premium (precio/mes)."
+    "notes": "Hasta 6 personas con 1 TB de OneDrive cada una (6 TB en total) y Word, Excel, PowerPoint premium (precio/mes).",
+    "tutorial": {
+      "method": "Suscripción con Saldo Microsoft en Monedero Turco o Clave Digital",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["Cuenta Microsoft", "VPN en Turquía", "Tarjeta regalo Microsoft TRY (Eneba/Turgame)"],
+      "steps": [
+        "Recarga tu cuenta Microsoft con una tarjeta de regalo en liras turcas en https://redeem.microsoft.com con VPN en Turquía.",
+        "Entra en microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products y elige Microsoft 365 Family.",
+        "Paga la suscripción con el saldo de tu monedero Microsoft.",
+        "Invita a 5 familiares a tu grupo Microsoft Family. Cada uno tendrá 1 TB de almacenamiento en la nube y Office completo."
+      ],
+      "tips": "El almacenamiento de OneDrive se sincroniza a máxima velocidad en España sin VPN."
+    }
   },
   {
     "id": "nordvpn",
@@ -361,6 +644,19 @@
       {"region": "EE.UU.", "flag": "🇺🇸", "currency": "USD", "amount": 14.99, "rate_key": "USD"},
       {"region": "España / Europa", "flag": "🇪🇸", "currency": "EUR", "amount": 14.99, "rate_key": "EUR"}
     ],
-    "notes": "Navegación cifrada de alta velocidad en más de 111 países, protección contra malware y bloqueador de amenazas (precio mensual)."
+    "notes": "Navegación cifrada de alta velocidad en más de 111 países, protección contra malware y bloqueador de amenazas (precio mensual).",
+    "tutorial": {
+      "method": "Compra en Checkout Oficial con VPN en Brasil y Tarjeta Multidivisa",
+      "difficulty": "Fácil",
+      "success_rate": "100%",
+      "requirements": ["VPN conectada a Brasil", "Tarjeta Revolut o PayPal"],
+      "steps": [
+        "Conéctate con tu VPN a Brasil y entra en https://nordvpn.com en modo incógnito.",
+        "Selecciona el plan mensual o el paquete de 2 años (los precios se mostrarán en Reales Brasileños R$).",
+        "Completa el pago con tarjeta Revolut o PayPal.",
+        "Descarga NordVPN en tu PC, móvil o router y disfruta de protección y desbloqueo de streaming en hasta 10 dispositivos."
+      ],
+      "tips": "Ahorras un 61% respecto a la tarifa europea."
+    }
   }
 ]

@@ -288,13 +288,34 @@ function renderGrid() {
   }).join('');
 }
 
-// Modal de Detalle Comparativo por Países
+// Cambiar pestaña dentro del modal de detalle
+function switchModalTab(tabName) {
+  const tabPricesBtn = document.getElementById('tabPricesBtn');
+  const tabGuideBtn = document.getElementById('tabGuideBtn');
+  const tabPricesContent = document.getElementById('tabPricesContent');
+  const tabGuideContent = document.getElementById('tabGuideContent');
+
+  if (tabName === 'prices') {
+    if (tabPricesBtn) tabPricesBtn.classList.add('active');
+    if (tabGuideBtn) tabGuideBtn.classList.remove('active');
+    if (tabPricesContent) tabPricesContent.style.display = 'block';
+    if (tabGuideContent) tabGuideContent.style.display = 'none';
+  } else {
+    if (tabPricesBtn) tabPricesBtn.classList.remove('active');
+    if (tabGuideBtn) tabGuideBtn.classList.add('active');
+    if (tabPricesContent) tabPricesContent.style.display = 'none';
+    if (tabGuideContent) tabGuideContent.style.display = 'block';
+  }
+}
+
+// Modal de Detalle Comparativo por Países y Tutorial
 function openDetailModal(subId) {
   const sub = state.subscriptions.find(s => s.id === subId);
   if (!sub) return;
 
   const cheapest = sub.cheapest_region;
   const brandImg = getBrandLogo(sub, 52);
+  const tutorial = sub.tutorial;
   detailModal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 
@@ -330,41 +351,104 @@ function openDetailModal(subId) {
       </div>
     ` : ''}
 
-    <h4 class="table-header-title"><i class="fa-solid fa-earth-americas"></i> Comparativa de Precios Oficiales por País</h4>
-    <div class="regional-table-wrapper">
-      <table class="regional-table">
-        <thead>
-          <tr>
-            <th>País / Región</th>
-            <th>Precio Moneda Local</th>
-            <th>Precio Convertido en EUR (€)</th>
-            <th>Ahorro vs España</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${(sub.regional_prices || []).map(r => `
-            <tr class="${r.region === cheapest.region && r.saved_pct > 0 ? 'cheapest-row' : ''} ${r.region.includes('España') ? 'spain-row' : ''}">
-              <td>
-                <div class="region-cell">
-                  <span class="flag-icon">${r.flag}</span>
-                  <span>${r.region}</span>
-                  ${r.region.includes('España') ? '<span style="font-size: 0.75rem; color: var(--accent-blue); font-weight: 700;">(Oficial)</span>' : ''}
-                </div>
-              </td>
-              <td style="font-family: var(--font-mono);">${r.local_amount.toFixed(2)} ${r.currency} / mes</td>
-              <td style="font-family: var(--font-mono); font-weight: 700; color: ${r.region === cheapest.region ? 'var(--accent-green)' : 'var(--text-main)'};">
-                ${r.eur_price.toFixed(2)}€ / mes
-              </td>
-              <td>
-                ${r.saved_pct > 0 
-                  ? `<span class="savings-badge">-${r.saved_pct}% (-${r.saved_eur.toFixed(2)}€/mes)</span>` 
-                  : `<span class="savings-badge zero">-</span>`
-                }
-              </td>
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="tabPricesBtn" onclick="switchModalTab('prices')">
+        <i class="fa-solid fa-earth-americas"></i> Comparativa de Precios
+      </button>
+      <button class="modal-tab" id="tabGuideBtn" onclick="switchModalTab('guide')">
+        <i class="fa-solid fa-book-open-reader text-cyan"></i> Guía Paso a Paso (100% Funcional)
+      </button>
+    </div>
+
+    <!-- Pestaña 1: Tabla de Precios -->
+    <div id="tabPricesContent" class="modal-tab-pane">
+      <div class="regional-table-wrapper">
+        <table class="regional-table">
+          <thead>
+            <tr>
+              <th>País / Región</th>
+              <th>Precio Moneda Local</th>
+              <th>Precio Convertido en EUR (€)</th>
+              <th>Ahorro vs España</th>
             </tr>
-          `).join('')}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            ${(sub.regional_prices || []).map(r => `
+              <tr class="${r.region === cheapest.region && r.saved_pct > 0 ? 'cheapest-row' : ''} ${r.region.includes('España') ? 'spain-row' : ''}">
+                <td>
+                  <div class="region-cell">
+                    <span class="flag-icon">${r.flag}</span>
+                    <span>${r.region}</span>
+                    ${r.region.includes('España') ? '<span style="font-size: 0.75rem; color: var(--accent-blue); font-weight: 700;">(Oficial)</span>' : ''}
+                  </div>
+                </td>
+                <td style="font-family: var(--font-mono);">${r.local_amount.toFixed(2)} ${r.currency} / mes</td>
+                <td style="font-family: var(--font-mono); font-weight: 700; color: ${r.region === cheapest.region ? 'var(--accent-green)' : 'var(--text-main)'};">
+                  ${r.eur_price.toFixed(2)}€ / mes
+                </td>
+                <td>
+                  ${r.saved_pct > 0 
+                    ? `<span class="savings-badge">-${r.saved_pct}% (-${r.saved_eur.toFixed(2)}€/mes)</span>` 
+                    : `<span class="savings-badge zero">-</span>`
+                  }
+                </td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Pestaña 2: Tutorial Paso a Paso -->
+    <div id="tabGuideContent" class="modal-tab-pane" style="display: none;">
+      ${tutorial ? `
+        <div class="tutorial-card">
+          <div class="tutorial-header-box">
+            <div class="tutorial-method-title">
+              <i class="fa-solid fa-key text-emerald"></i>
+              <span>${tutorial.method}</span>
+            </div>
+            <div class="tutorial-badges">
+              <span class="t-badge diff"><i class="fa-solid fa-gauge-high"></i> Dificultad: ${tutorial.difficulty}</span>
+              <span class="t-badge success"><i class="fa-solid fa-circle-check"></i> Éxito: ${tutorial.success_rate}</span>
+            </div>
+          </div>
+
+          <div class="tutorial-section">
+            <h5><i class="fa-solid fa-clipboard-check text-cyan"></i> Requisitos Previos:</h5>
+            <ul class="requirements-list">
+              ${(tutorial.requirements || []).map(req => `
+                <li><i class="fa-solid fa-circle-dot"></i> <span>${req}</span></li>
+              `).join('')}
+            </ul>
+          </div>
+
+          <div class="tutorial-section">
+            <h5><i class="fa-solid fa-list-ol text-cyan"></i> Pasos para Conseguir la Suscripción:</h5>
+            <div class="steps-timeline">
+              ${(tutorial.steps || []).map((step, idx) => `
+                <div class="step-item">
+                  <div class="step-number">${idx + 1}</div>
+                  <div class="step-text">${step}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          ${tutorial.tips ? `
+            <div class="tutorial-tips-box">
+              <i class="fa-solid fa-lightbulb text-gold" style="font-size: 1.1rem; margin-top: 2px;"></i>
+              <div class="tips-content">
+                <strong>Consejo Clave:</strong> ${tutorial.tips}
+              </div>
+            </div>
+          ` : ''}
+        </div>
+      ` : `
+        <div class="tutorial-card">
+          <p style="color: var(--text-muted); text-align: center; padding: 1.5rem;">Guía de activación disponible en la próxima actualización.</p>
+        </div>
+      `}
     </div>
   `;
 }
